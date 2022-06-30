@@ -11,12 +11,15 @@ namespace task2
             Console.WriteLine("Введите число B");
             int numberB = Convert.ToInt32(Console.ReadLine());
             
-            if(numberA > numberB){
-                int max = numberA;
-                int min = numberB;
-                Console.WriteLine("MAX = {0}, MIN = {1}", max, min);
+            if(numberA > numberB)
+            {
+                // int max = numberA;
+                // int min = numberB;
+                // Console.WriteLine("MAX = {0}, MIN = {1}", max, min);
+                Console.WriteLine("Число А (" + numberA + ") больше числа B (" + numberB + ")");
             }
-            else{
+            else
+            {
                 int max = numberB;
                 int min = numberA;
                 Console.WriteLine("MAX = {0}, MIN = {1}", max, min);

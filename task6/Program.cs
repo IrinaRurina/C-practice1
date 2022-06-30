@@ -8,11 +8,15 @@ namespace task6
         {
             Console.WriteLine("Введите число");
             int number = Convert.ToInt32(Console.ReadLine());
-            int half1 = number / 2;
+            
+            /*int half1 = number / 2;
             double half2 = (double) number / 2;
             double difference = half2 - half1;
 
             if(difference == 0)
+            */
+            if (number % 2 == 0) 
+            //% - остаток от деления
             {
                 Console.WriteLine("Четное");
             }
@@ -20,6 +24,7 @@ namespace task6
             {
                 Console.WriteLine("Нечетное");
             }
+            
         }
     }
 }

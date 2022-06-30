@@ -13,7 +13,7 @@ namespace task4
             Console.WriteLine("Введите число C");
             int numberC = Convert.ToInt32(Console.ReadLine());
             
-            if(numberA > numberB)
+            /*if(numberA > numberB)
             {
                 if(numberA > numberC)
                     Console.WriteLine(numberA);
@@ -27,6 +27,20 @@ namespace task4
                 else
                     Console.WriteLine(numberC);
             }        
+            */
+            int max = numberA;
+            
+            if (max < numberB)
+            {
+                max = numberB;
+            }
+            if (max < numberC)
+            {
+                max = numberC;
+            }
+
+            Console.WriteLine("Максимальным из трех чисел (" + numberA +", " + numberB + ", " + numberC + ") является число " + max + ".");
+        
         }
     }
 }
