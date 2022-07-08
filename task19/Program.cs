@@ -41,6 +41,7 @@ namespace task19
             {
                 bool result = false;
                 int N = arr.Length;
+
                 for (int i = 0; i < N/2; i++) 
                 {
                     if (arr[i] != arr[N - i - 1])
@@ -55,7 +56,14 @@ namespace task19
                 return result;
             }
             
-            int[] arr = Array.ConvertAll(Console.Readline().Split(''), int.Parse); // ОШИБКА! Пустая символьная константа
+            int[] arr = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
+
+            Console.WriteLine(arr.Length);
+            
+            foreach (int i in arr)
+            {
+                Console.WriteLine(i + " - ");
+            }
             isPalindrome(arr);
         }
     }
