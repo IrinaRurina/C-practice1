@@ -19,9 +19,9 @@ namespace task36
                 Console.Write(array[i] + " ");                
             }
 
-            for (int i = 1; i < length; i+=2)
+            for (int i = 1; i < length; i += 2)
             {
-                sum = sum +array[i];
+                sum += array[i];
             }
             Console.WriteLine();
             Console.WriteLine("Сумма элементов, стоящих на нечётных позициях: " + sum);

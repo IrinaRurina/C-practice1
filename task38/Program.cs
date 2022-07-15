@@ -32,7 +32,7 @@ namespace task38
                 }
             }
             Console.WriteLine();
-            Console.WriteLine("MAX - MIN = " + (max-min));
+            Console.WriteLine("MAX - MIN = " + (max - min));
         }
     }
 }
